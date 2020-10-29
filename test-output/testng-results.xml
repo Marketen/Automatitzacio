@@ -2,29 +2,50 @@
 <testng-results skipped="0" failed="1" ignored="0" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="49479" started-at="2020-10-22T22:34:40Z" finished-at="2020-10-22T22:35:30Z">
+  <suite name="Default suite" duration-ms="14766" started-at="2020-10-29T13:22:30Z" finished-at="2020-10-29T13:22:45Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="49479" started-at="2020-10-22T22:34:40Z" finished-at="2020-10-22T22:35:30Z">
+    <test name="Default test" duration-ms="14766" started-at="2020-10-29T13:22:30Z" finished-at="2020-10-29T13:22:45Z">
       <class name="com.auto.Testcases.TestSearchProduct">
-        <test-method status="PASS" signature="SearchProduct()[pri:0, instance:com.auto.Testcases.TestSearchProduct@475530b9]" name="SearchProduct" duration-ms="35229" started-at="2020-10-22T22:34:40Z" finished-at="2020-10-22T22:35:16Z">
+        <test-method status="PASS" signature="SearchProduct()[pri:0, instance:com.auto.Testcases.TestSearchProduct@475530b9]" name="SearchProduct" duration-ms="9616" started-at="2020-10-29T13:22:30Z" finished-at="2020-10-29T13:22:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SearchProduct -->
-        <test-method status="FAIL" signature="TestTitle()[pri:0, instance:com.auto.Testcases.TestSearchProduct@475530b9]" name="TestTitle" duration-ms="14227" started-at="2020-10-22T22:35:16Z" finished-at="2020-10-22T22:35:30Z">
-          <exception class="java.lang.AssertionError">
+        <test-method status="FAIL" signature="TestTitle()[pri:0, instance:com.auto.Testcases.TestSearchProduct@475530b9]" name="TestTitle" duration-ms="5128" started-at="2020-10-29T13:22:40Z" finished-at="2020-10-29T13:22:45Z">
+          <exception class="org.openqa.selenium.NoSuchWindowException">
             <message>
-              <![CDATA[expected [Amazon] but found [Amazon.es: compra online de electrónica, libros, deporte, hogar, moda y mucho más.]]]>
+              <![CDATA[no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=86.0.4240.111)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MARC-PC', ip: '192.168.56.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_251'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.111, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\Marc\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:52281}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: f32cdb3e62f3734606418cdb340b82af]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Amazon] but found [Amazon.es: compra online de electrónica, libros, deporte, hogar, moda y mucho más.]
-at org.testng.Assert.fail(Assert.java:96)
-at org.testng.Assert.failNotEquals(Assert.java:776)
-at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-at org.testng.Assert.assertEquals(Assert.java:118)
-at org.testng.Assert.assertEquals(Assert.java:453)
-at org.testng.Assert.assertEquals(Assert.java:463)
-at com.auto.Testcases.TestSearchProduct.TestTitle(TestSearchProduct.java:70)
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=86.0.4240.111)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MARC-PC', ip: '192.168.56.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_251'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.111, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\Marc\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:52281}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: f32cdb3e62f3734606418cdb340b82af
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+at org.openqa.selenium.remote.RemoteWebDriver.getTitle(RemoteWebDriver.java:281)
+at com.auto.Pages.LandingPage.getTitle(LandingPage.java:41)
+at com.auto.Testcases.TestSearchProduct.TestTitle(TestSearchProduct.java:68)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -52,7 +73,7 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestTitle -->

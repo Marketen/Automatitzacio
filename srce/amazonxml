@@ -2,7 +2,7 @@
 <suite name="Amazon" parallel="methods" thread-count="2" preserve-order="false" verbose="1">
   <test name="Amazon" parallel="methods" thread-count="2" preserve-order="false" verbose="1">
     <classes>
-      <class name="p1.Amazon">
+      <class name="com.auto.Testcases.TestSearchProduct">
         <methods>
          <include name="SearchProduct"/>
          <include name="TestTitle"/>
